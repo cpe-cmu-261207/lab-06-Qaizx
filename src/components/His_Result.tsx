@@ -2,11 +2,6 @@ import axios from "axios";
 import {useEffect, useState } from "react"
 import { useLocation} from "react-router-dom";
 
-
-var date : string[] = []
-var rate : string[] = []
-
-
 type info  = {
 
 }
@@ -34,7 +29,7 @@ const His_Result = () => {
 				await axios.get(`https://api.coindesk.com/v1/bpi/historical/close.json?currency=THB&start=${date1}&end=${date2}`)
         setLoading(false)
         for (const [key,value] of Object.entries(resp.data.bpi)) {
-          var arr : string, price : number, price1 : Float32Array//, price_split : string[], price_first : string[], price_last : string = ""
+          var arr : string, price : number
           price = Number(value)
           arr = key + " - " + price.toLocaleString()
           date.push(arr)
