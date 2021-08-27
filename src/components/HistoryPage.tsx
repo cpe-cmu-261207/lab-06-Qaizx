@@ -33,14 +33,14 @@ const HistoryPage = () => {
                     }else if(parseInt(a[2]) === parseInt(b[2])){
                         history.push(linkHis) 
                     }else if(parseInt(a[2]) > parseInt(b[2])){
-                        alert("Please select start or end")
+                        alert("Please select one more time")
                     }
                 }else if(parseInt(a[1]) > parseInt(b[1])){
-                    alert("Please select start or end")
+                    alert("Please select one more time")
                 }
 
             }else if(parseInt(a[0]) > parseInt(b[0])){
-                alert("Please select start or end")
+                alert("Please select one more time")
             }
             
         }
