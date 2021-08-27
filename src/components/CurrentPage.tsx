@@ -37,14 +37,14 @@ const CurrentPage = () => {
 			return (
                 <div className='text-center space-y-3'>
                 <p className='text-2xl font-semibold'>Current price</p>
-                <p>There was some error !</p>
+				<p className='text-2xl'>Loading ...</p>
                 </div>
             )
 		else if (error)
 			return(
 				<div className='text-center space-y-3'>
                 <p className='text-2xl font-semibold'>Current price</p>
-                <p className='text-2xl'>Loading ...</p>
+                <p>There was some error !</p>
                 </div>
 			) 
 		else
